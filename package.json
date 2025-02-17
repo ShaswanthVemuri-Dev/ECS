@@ -1,29 +1,33 @@
 {
-  "name": "react-typescript",
+  "name": "emotional-circuit-simulator",
   "version": "1.0.0",
   "description": "React and TypeScript example starter project",
   "keywords": [
     "typescript",
     "react",
-    "starter"
+    "circuit-simulator",
+    "emotion-circuit"
   ],
-  "main": "src/index.tsx",
+  "main": "src/index.js",
+  "homepage": "https://shaswanthvemuri-dev.github.io/ECS/",
   "dependencies": {
-    "loader-utils": "3.2.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-scripts": "5.0.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "gh-pages": "^5.0.0"
   },
   "devDependencies": {
-    "@types/react": "18.2.38",
-    "@types/react-dom": "18.2.15",
-    "typescript": "4.4.4"
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.15",
+    "typescript": "^4.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
